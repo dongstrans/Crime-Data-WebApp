@@ -35,9 +35,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-page="/Index" href="london.php">Maps</a></li>
-                    <li><a asp-page="/About" href="#">About</a></li>
-                    <li><a asp-page="/Contact" href="#">Contact</a></li>
+                    <li><a asp-page="/Index" href="maps.php">Maps</a></li>
                     <li><a asp-page="/Intelligence" href="localhost:8501">Intelligence</a></li>
                     <li><a asp-page="/Borough" href="borough.php">Borough</a></li>
                 </ul>
@@ -52,6 +50,7 @@
         <hr />
         <br>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;Please enter a search on the database.</p>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;You can search by the ID, Crime Type, LSOA Code or LSOA Name.</p>
         <!----------Start of PHP Code to connect to MySQL Database--------->
         <?php
             // Write SQL Statements
@@ -205,7 +204,7 @@
         </div>
 
         <!----------End of PHP Code to connect to MySQL Database---------->
-        <br>
+        
         <footer>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&copy; 2023 - Street Crime</p>
         </footer>
